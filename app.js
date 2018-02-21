@@ -60,7 +60,7 @@ window.onload = function() {
     rawFile.send(null);
   }
 
-  getABI("/Token.json", function(json) {
+  getABI("./Token.json", function(json) {
     abi = JSON.parse(json).abi;
     App.start();
   });
